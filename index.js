@@ -10,9 +10,7 @@ function createEmployeeRecord (employee) {
 }
 
 function createEmployeeRecords (employees) {
-    let roster = []
-    employees.map( employee => roster.push(createEmployeeRecord(employee)))
-    return roster
+    return employees.map( employee => createEmployeeRecord(employee))
 }
 
 function createTimeInEvent (record, time) {
